@@ -13,7 +13,7 @@ Those seeking a more collaborative approach and assistance with building a produ
 reach out to D-Wave [directly](https://www.dwavesys.com/solutions-and-products/professional-services/) and also explore the feature selection [offering](https://aws.amazon.com/marketplace/pp/prodview-bsrc3yuwgjbo4) in AWS Marketplace.
 
 The package's main class, `SelectFromNonlinearModel`, can be used in any existing `sklearn` pipeline.
-For an introduction to hybrid methods for feature selection, see the [Feature Selection for NL](https://github.com/dwave-examples/feature-selection-cqm).
+For an introduction to hybrid methods for feature selection, see the [Feature Selection for Nonlinear model](https://github.com/dwave-examples/feature-selection-cqm).
 
 ## Examples
 
@@ -33,7 +33,7 @@ A minimal example of using the plugin to select 20 of 30 features of an `sklearn
 (569, 20)
 ```
 
-For large problems, the default runtime may be insufficient. You can use the NL solver's 
+For large problems, the default runtime may be insufficient. You can use the nonlinear (NL) solver's 
 [`time_limit`](https://docs.ocean.dwavesys.com/en/stable/docs_system/reference/generated/dwave.system.samplers.LeapHybridCQMSampler.min_time_limit.html)
 method to find the minimum accepted runtime for your problem; alternatively, simply submit as above 
 and check the returned error message for the required runtime. 
